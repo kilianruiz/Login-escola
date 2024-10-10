@@ -25,6 +25,7 @@ INSERT INTO tbl_usuarios (nombre_usuario, psswd_usuario, id_cargo) VALUES ('Hugo
 INSERT INTO tbl_usuarios (nombre_usuario, psswd_usuario, id_cargo) VALUES ('Adri', 'adminAdri1234', 2);
 INSERT INTO tbl_usuarios (nombre_usuario, psswd_usuario, id_cargo) VALUES ('Killian', 'adminKillian1234', 3);
 INSERT INTO tbl_usuarios (nombre_usuario, psswd_usuario, id_cargo) VALUES ('Alejandro', 'adminAlejandro1234', 4);
+INSERT INTO tbl_usuarios (nombre_usuario, psswd_usuario, id_cargo) VALUES ('Alberto', 'alberto', 3);
 
 SELECT u.nombre_usuario, u.psswd_usuario, c.nombre_cargo 
 FROM tbl_usuarios AS u 

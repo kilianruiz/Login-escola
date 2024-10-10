@@ -22,3 +22,22 @@
 /*
 ---- SANEAR ----
 */
+
+
+// procValidaciones.php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recibir los datos del formulario
+    $usuario = $_POST['usuario'];
+    $password = $_POST['password'];
+
+    // Encriptar la contraseña usando password_hash
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    // A partir de aquí, puedes guardar $hashedPassword en la base de datos
+    // y compararlo más tarde con password_verify al iniciar sesión.
+
+    echo "Usuario: " . htmlspecialchars($usuario) . "<br>";
+    echo "Contraseña encriptada: " . $hashedPassword;
+}
+?>
